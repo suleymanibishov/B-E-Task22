@@ -1,0 +1,41 @@
+﻿@model RecentWorkCompononent
+@{
+    ViewData["Title"] = "Creat";
+}
+
+<div class="clearfix"></div>
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Vertical Form</div>
+                        <hr>
+                        <form method="post" asp-action="Creat">
+                            <div class="form-group">
+                                <label asp-for="Title"></label>
+                                <input asp-for="Title" type="text" class="form-control" id="input-1" placeholder="Enter Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description"></label>
+                                <input asp-for="Description" type="text" class="form-control" id="input-2" placeholder="Enter Your Email Address">
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Image"></label>
+                                <input asp-for="Image" type="text" class="form-control" id="input-3" placeholder="Enter Your Mobile Number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-light px-5">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
