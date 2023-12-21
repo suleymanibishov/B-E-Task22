@@ -8,11 +8,13 @@
 <div class="content-wrapper">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Hover Table</h5>
-                        <a asp-action="Creat" class="btn-check">Creat +</a>
+                        <div class="byRuslan" style="display:flex; justify-content:space-between;">
+                            <h5 class="card-title">Hover Table</h5>
+                            <a asp-action="Creat" class="btn btn-primary text-white" >Create +</a>
+                        </div>
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <thead>
@@ -31,6 +33,13 @@
                                             <td>@item.Title</td>
                                             <td>@item.Description</td>
                                             <td>@item.Image</td>
+                                            <td>
+                                                <form method="post" asp-route-id="@item.Id" asp-action="delete">
+                                                    <a asp-action="Detail" asp-route-id="@item.Id" class="btn bg-info">Detail</a>
+                                                    <a asp-action="Update" asp-route-id="@item.Id" class="btn bg-warning">Edit</a>
+                                                    <button class="btn bg-danger">DELETE</button>
+                                                </form>
+                                            </td>
                                         </tr>
                                     }
 

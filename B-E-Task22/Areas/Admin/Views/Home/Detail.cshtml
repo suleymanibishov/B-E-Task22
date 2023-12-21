@@ -1,6 +1,7 @@
 ﻿@model RecentWorkCompononent
+
 @{
-    ViewData["Title"] = "Creat";
+    ViewData["Title"] = "Detail";
 }
 
 <div class="clearfix"></div>
@@ -14,25 +15,26 @@
                     <div class="card-body">
                         <div class="card-title">Vertical Form</div>
                         <hr>
-                        <form method="post" asp-action="Creat">
+                        <form>
+                            <div class="form-group">
+                                <label asp-for="Id"></label>
+                                <h1 class="form-control">@Model.Id</h1>
+                            </div>
                             <div class="form-group">
                                 <label asp-for="Title"></label>
-                                <input asp-for="Title" type="text" class="form-control" id="input-1" placeholder="Enter Your Name">
-                                <span class="bg-danger" asp-validation-for="Title"></span>
+                                <h1 class="form-control">@Model.Title</h1>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Description"></label>
-                                <input asp-for="Description" type="text" class="form-control" id="input-2" placeholder="Enter Your Email Address">
-                                <span class="bg-danger" asp-validation-for="Description"></span>
+                                <h1 class="form-control">@Model.Description</h1>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Image"></label>
-                                <input asp-for="Image" type="text" class="form-control" id="input-3" placeholder="Enter Your Mobile Number">
-                                <span class="bg-danger" asp-validation-for="Image"></span>
+                                <img src="~/assets/img/@Model.Image" />
                             </div>
-                            
+
                             <div class="form-group">
-                                <button type="submit" class="btn btn-light px-5">Submit</button>
+                                <a asp-action="index" class="btn btn-light px-5">Back</a>
                             </div>
                         </form>
                     </div>
@@ -41,4 +43,8 @@
         </div>
     </div>
 </div>
+
+
+
+
 
