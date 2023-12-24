@@ -51,7 +51,7 @@
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" asp-action="index" asp-controller="Pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
@@ -67,6 +67,8 @@
         </div>
     </nav>
     <!-- Close Header -->
+
+
 
 
 @RenderBody()
@@ -195,6 +197,7 @@
 </footer>
 <!-- End Footer -->
 <!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="~/assets/js/bootstrap.bundle.min.js"></script>
 <!-- Templatemo -->
 <script src="~/assets/js/templatemo.js"></script>

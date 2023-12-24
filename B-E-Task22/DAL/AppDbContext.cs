@@ -11,5 +11,6 @@ namespace B_E_Task22.DAL
     {
         public AppDbContext(DbContextOptions<AppDbContext> option) : base(option) { }
         public DbSet<RecentWorkCompononent> RecentWorkCompononents { get; set; }
+        public DbSet<Pricing> Pricings { get; set; }
     }
 }

@@ -148,3 +148,6 @@ D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\bin\Debug\net5.0\Microsoft.EntityFra
 D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Creat.cshtml.g.cs
 D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Update.cshtml.g.cs
 D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Detail.cshtml.g.cs
+D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Views\Shared\LoadMore.cshtml.g.cs
+D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Views\Pricing\Index.cshtml.g.cs
+D:\C#\Garaj\B-E-task2\B-E-Task22\B-E-Task22\obj\Debug\net5.0\Razor\Views\Shared\_PricingPartialView.cshtml.g.cs
